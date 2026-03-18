@@ -11,11 +11,17 @@ import CoreData
 @main
 struct RecipeAppApp: App {
     let persistenceController = PersistenceController.shared
+    @StateObject private var authViewModel = AuthViewModel()
+
+    init() {
+        SeedDataService.seedIfNeeded(context: PersistenceController.shared.container.viewContext)
+    }
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(authViewModel)
         }
     }
 }
