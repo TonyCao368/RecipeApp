@@ -173,7 +173,7 @@ RecipeApp
 
 Use the hardcoded credentials below:
 
-* Username: `admin`
+* Username: `Tony`
 * Password: `1234`
 
 You can also create a new account from the registration screen.
