@@ -49,8 +49,8 @@ class AddEditRecipeViewModel: ObservableObject {
             errorMessage = "Recipe name is required"
             return false
         }
-        if name.count > 20 {
-            errorMessage = "Recipe name must be 20 characters or less"
+        if name.count > 50 {
+            errorMessage = "Recipe name must be 50 characters or less"
             return false
         }
         if recipeDescription.count > 250 {

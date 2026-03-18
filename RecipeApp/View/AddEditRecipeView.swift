@@ -33,7 +33,7 @@ struct AddEditRecipeView: View {
                         .padding()
                         .background(Color.gray.opacity(0.1))
                         .cornerRadius(10)
-                    Text("\(viewModel.name.count)/20")
+                    Text("\(viewModel.name.count)/50")
                         .font(.caption)
                         .foregroundColor(.secondary)
                 }
